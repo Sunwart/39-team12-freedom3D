@@ -2,14 +2,18 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+ 
  @import "./utils/variables";
- @import "./utils/_visually-hidden.scss";
+ @import "./utils/visually-hidden";
  
  @import "./base/fonts";
  @import "./base/common";
- @import "./base/normalizer";
  @import "./base/container";
- 
+
+
+ @import "./layout/header";
+ @import "./layout/menu-mobile";
+
  @import "./layout/take-order";
  
  @import "./layout/main-hero";
@@ -19,5 +23,7 @@
  @import "./layout/scanning3d";
  @import "./layout/print3d";
  @import "./layout/contacting";
+
+ @import "./layout/footer";
 
  
