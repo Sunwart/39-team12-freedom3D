@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://Sunwart.github.io/39-team12-freedom3d",
   "scripts": {
-    "dev": "parcel src/*.html",
+    "dev": "parcel src/index.html",
     "build": "parcel build src/*.html --public-url /39-team12-freedom3d/"
   },
   "repository": {
