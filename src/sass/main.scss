@@ -3,9 +3,18 @@
  * Все паршалы подключаются сюда.
  */
  @import "./utils/variables";
+ @import "./utils/_visually-hidden.scss";
  
+ @import "./base/fonts";
  @import "./base/common";
+ @import "./base/normalizer";
+ @import "./base/container";
  
  @import "./layout/take-order";
+ 
+ @import "./layout/main-hero";
+ @import "./layout/main-gallery";
+ @import "./layout/modeling3d";
+
 
  
