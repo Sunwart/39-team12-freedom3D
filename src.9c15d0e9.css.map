@@ -1,1 +1,0 @@
-{"version":3,"sources":["sass/utils/_variables.scss","sass/base/_common.scss"],"names":[],"mappings":"AAAA,MACI,sBCDJ,EACI","file":"src.9c15d0e9.css","sourceRoot":"../src","sourcesContent":[":root {\n    --color-lorem: #cae900;\n}","p {\n    color: lightcoral;\n}"]}
