@@ -1,1 +1,0 @@
-{"version":3,"sources":["sass/utils/_variables.scss","sass/base/_common.scss"],"names":[],"mappings":"AAAA,MACI,sBCAJ,EACI","file":"main.cca0b243.css","sourceRoot":"../src","sourcesContent":[":root {\n    --color-lorem: #cae900;  // тестова, можна видалити\n}","// тестовий стиль, можна видалити\np {\n    color: lightcoral;\n}\n\n"]}
