@@ -1,14 +1,13 @@
 // Button Make Order - Zrobyty Zamovlennia
 
 //   Mobile from 0 to 320px to 767px
-//   Tablet from 768px to 1439px
-//   Desktop from 1440px to max
 
 .btn__make-order {
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
   border: none;
+  width: 280px;
 
   font-family: var(--main-font);
   font-weight: 700;
@@ -30,6 +29,14 @@
     background-color: var(--element-grey-color);
   }
 }
+//   Tablet from 768px to 1439px
+//   Desktop from 1440px to max
+
+@media screen and (min-width: 768px) {
+  .btn__make-order {
+    width: 277px;
+  }
+}
 
 // Button Send Contacts Form  - Vidpravyty
 
@@ -40,6 +47,7 @@
   margin: 0 auto;
   padding: 16px 83.5px;
   border: none;
+  width: 280px;
 
   font-family: var(--main-font);
   font-weight: 700;
@@ -68,5 +76,6 @@
 @media screen and (min-width: 768px) {
   .btn__send-form {
     padding: 16px 32px;
+    width: 177px;
   }
 }
