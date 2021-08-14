@@ -1,0 +1,46 @@
+.scanning__text {
+    font-weight: 300;
+}
+
+.scanning__item {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+
+    color: var(--primary-title-color);
+
+    background: var(--element-white-color);
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px var(--element-white-color);
+    border-radius: 50px 0px;
+
+
+    &::before {
+        margin-bottom: 15px;
+        content: '';
+        display: inline-block;
+        width: 94px;
+        height: 82px;
+        background-image: url(../images/scannin3d/mobile_1detail_original-min.png);
+    }
+}
+
+.scanning__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.margin-bottom__min {
+    margin-bottom: 16px;
+}
+
+.margin-bottom__middle {
+    margin-bottom: 24px;
+}
+
+.margin-bottom__max {
+    margin-bottom: 52px;
+}
