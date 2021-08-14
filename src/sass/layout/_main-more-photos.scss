@@ -3,11 +3,6 @@
   padding-bottom: 26px;
 }
 
-.more-photos__container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .more-photos__title {
   text-transform: uppercase;
   font-weight: 700;
@@ -36,11 +31,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .more-photos__container {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
   .more-photos__title {
     margin-bottom: 32px;
   }
@@ -64,11 +54,9 @@
 
   // .more-photos__item {
   //   margin-right: 19px;
-
   //   &:nth-child(3n) {
   //     margin-right: 0;
   //   }
-
   //   &:nth-child(n + 4) {
   //     margin-top: 19px;
   //   }
@@ -80,13 +68,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
-  .more-photos__container {
-    padding-left: 191px;
-    padding-right: 191px;
-  }
-  // я не знаю почему 191рх, а не 189рх как по макету,
-  // но без них вылазит лишних 4рх. пока так
 
   .more-photos__title {
     margin-bottom: 52px;
@@ -105,11 +86,9 @@
   //  Способ 2 **********************************************
   // .more-photos__item {
   //   margin-right: 32px;
-
   //   &:nth-child(3n) {
   //     margin-right: 0;
   //   }
-
   //   &:nth-child(n + 4) {
   //     margin-top: 32px;
   //   }
