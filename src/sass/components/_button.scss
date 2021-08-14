@@ -1,0 +1,72 @@
+// Button Make Order - Zrobyty Zamovlennia
+
+//   Mobile from 0 to 320px to 767px
+//   Tablet from 768px to 1439px
+//   Desktop from 1440px to max
+
+.btn__make-order {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border: none;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+
+  background: var(--element-background-color);
+  box-shadow: -10px -10px 20px var(--element-white-color), 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px var(--element-white-color);
+  border-radius: 30.5px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--element-grey-color);
+  }
+}
+
+// Button Send Contacts Form  - Vidpravyty
+
+//   Mobile from 0 to 320px to 767px
+
+.btn__send-form {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 83.5px;
+  border: none;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+
+  background: var(--element-background-color);
+  box-shadow: -10px -10px 20px var(--element-white-color), 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px var(--element-white-color);
+  border-radius: 30.5px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--element-grey-color);
+  }
+}
+
+//   Tablet from 768px to 1439px
+//   Desktop from 1440px to max
+
+@media screen and (min-width: 768px) {
+  .btn__send-form {
+    padding: 16px 32px;
+  }
+}
