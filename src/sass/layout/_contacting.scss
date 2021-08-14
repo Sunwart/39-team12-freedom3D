@@ -6,10 +6,12 @@
   @media screen and (min-width: 768px) {
     width: 247px;
     height: 192px;
+    margin-right: 20px;
   }
   @media screen and (min-width: 1444px) {
     width: 515px;
     height: 315px;
+    margin-right: 32px;
   }
 }
 
@@ -18,10 +20,18 @@
   height: 100%;
   border: 0;
 }
-
+.contact-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .contact-page__hero-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (min-width: 1444px) {
+    margin-bottom: 100px;
+  }
 }
 .hero-description__item:not(:last-child) {
   margin-bottom: 30px;

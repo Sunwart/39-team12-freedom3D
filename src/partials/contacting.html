@@ -2,11 +2,11 @@
 <!--Contact page-->
 
 <main>
-  <div class="contact-page">
+  <div class="container contact-page">
     <!--Contact page hero section-->
 
     <section class="contact-page__hero">
-      <h1>КОНТАКТИ</h1>
+      <h1>контакти</h1>
       <div class="contact-page__hero-wrapper">
         <div class="video-wrapper contact-page__hero-item">
           <iframe
@@ -17,54 +17,42 @@
             allowfullscreen
           ></iframe>
         </div>
-
-        <ul class="contact-page__hero-item hero-description">
-          <li class="hero-description__item">
-            <p>
-              Людина, уперше побачивши процес 3D друку, може легко захопитися спостереженням за цим
-              процесом не на десяток хвилин.
-            </p>
-          </li>
-          <li class="hero-description__item">
-            <p>
-              Наша команда створює timelapse відео, щоб ви могли краще ознайомитися з технологією 3D
-              друку і просто помилуватися красою цього процесу.
-            </p>
-          </li>
-          <li class="hero-description__item">
-            <p>Приємного перегляду!</p>
-          </li>
-        </ul>
+        <div class="contact-page__hero-item hero-description">
+          <p class="hero-description__item">
+            Людина, уперше побачивши процес 3D друку, може легко захопитися спостереженням за цим
+            процесом не на десяток хвилин.
+          </p>
+          <p class="hero-description__item">
+            Наша команда створює timelapse відео, щоб ви могли краще ознайомитися з технологією 3D
+            друку і просто помилуватися красою цього процесу.
+          </p>
+          <p class="hero-description__item">Приємного перегляду!</p>
+        </div>
       </div>
     </section>
 
     <!--Contact page contact information-->
 
     <section class="contact-page__contacts">
-      <h2>ТЕЛЕФОНИ</h2>
-      <ul class="contact-page__contacts-list">
-        <li class="contact-page__contacts-item"></li>
-        <li>
+      <h2>Телефони</h2>
+      <ul class="contact-page__contacts-list list">
+        <li class="contact-page__contacts-item">
           <a href="tel:+380957384551" class="link">+38 (095) -73-84-551</a>
         </li>
-        <li>
+        <li class="contact-page__contacts-item">
           <a href="tel:+380980025235" class="link">+38 (098) -00-25-235</a>
         </li>
       </ul>
 
       <h2>Email</h2>
-      <ul class="contact-page__contacts-list">
-        <li class="contact-page__contacts-item"></li>
-        <li>
-          <a href="mailto:3dfreeform.info@gmail.com" class="link">3dfreeform.info@gmail.com</a>
-        </li>
-      </ul>
+      <div class="contact-page__contacts-list">
+        <a href="mailto:3dfreeform.info@gmail.com" class="link">3dfreeform.info@gmail.com</a>
+      </div>
 
-      <h2>РОБОЧИЙ ЧАС</h2>
-      <ul class="contact-page__contacts-list">
-        <li class="contact-page__contacts-item"></li>
-        <li>Пн-пт: з 8:00 до 19:00</li>
-        <li>Сб, Нд: з 10:00 до 17:00</li>
+      <h2>Робочий час</h2>
+      <ul class="contact-page__contacts-list list">
+        <li>Пн-Пт: З 8:00 до 19:00</li>
+        <li>Сб, Нд: З 10:00 до 17:00</li>
       </ul>
     </section>
 
@@ -72,8 +60,8 @@
 
     <section class="contact-page__contact-form">
       <div>
-        <h2>ЗВ'ЯЖІТЬСЯ З НАМИ</h2>
-        <form action="">
+        <h2>зв'яжіться з нами</h2>
+        <form action="#">
           <label
             >Ім'я
             <input
@@ -86,12 +74,7 @@
             />
           </label>
           <label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
+            <input type="email" name="email" placeholder="Email" required />
           </label>
 
           <label for="user_comments">Повідомлення</label>
@@ -101,7 +84,7 @@
             placeholder="Залишіть своє повідмлення"
           ></textarea>
           <p>*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</p>
-          <button type="submit">ВІДПРАВИТИ</button>
+          <button type="submit">відправити</button>
         </form>
       </div>
     </section>
