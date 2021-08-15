@@ -2,32 +2,30 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
- 
- @import "./utils/variables";
- @import "./utils/visually-hidden";
- 
- @import "./base/fonts";
- @import "./base/common";
- @import "./base/container";
 
- @import "./components/section";
- @import "./components/text-styling";
- @import "./components/button";
+@import './utils/variables';
+@import './utils/visually-hidden';
 
+@import './base/fonts';
+@import './base/common';
+@import './base/container';
 
- @import "./layout/header";
- @import "./layout/menu-mobile";
+@import './components/section';
+@import './components/text-styling';
+@import './components/button';
 
- @import "./layout/take-order";
- 
- @import "./layout/main-hero";
- @import "./layout/main-gallery";
- @import "./layout/main-more-photos";
- @import "./layout/modeling3d";
- @import "./layout/scanning3d";
- @import "./layout/print3d";
- @import "./layout/contacting";
+@import './layout/header';
+@import './layout/menu-mobile';
 
- @import "./layout/footer";
+@import './layout/take-order';
 
- 
+@import './layout/main-hero';
+@import './layout/main-gallery';
+@import './layout/main-more-photos';
+@import './layout/main-more-photos-gellery';
+@import './layout/modeling3d';
+@import './layout/scanning3d';
+@import './layout/print3d';
+@import './layout/contacting';
+
+@import './layout/footer';
