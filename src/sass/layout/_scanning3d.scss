@@ -254,15 +254,12 @@
 
 @media screen and (min-width: 1440px) {
     .scanning__hero {
+        position: relative;
         margin-bottom: 24px;
     }
 
     .main__title-section {
         margin-bottom: 24px;        
-    }
-
-    .scanning__hero {
-        position: relative;
     }
 
     .hero__wrapper {
@@ -305,4 +302,103 @@
             background-image: url(../images/scanning3d/desktop_hero@2x-min.png);        
         }
     } 
+
+    .scanning__process {
+        margin-bottom: 52px;
+    }
+
+    .scanning__wrapper {
+        margin-bottom: 100px;
+    }
+
+    .scanning__item {
+        padding-top: 55px;
+        padding-right: 37px;
+        padding-bottom: 22px;
+        padding-left: 37px;
+
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.28;
+    }
+
+    .scanning__link--margin-bottom {
+        margin-bottom: 100px;
+    }
+
+    .image__original-detail::before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 177px;
+        height: 154px;
+        background-image: url(../images/scanning3d/desktop_1detail_original-min.png);
+        background-size: 177px 154px;
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .image__original-detail::before {
+            content: '';
+            background-image: url(../images/scanning3d/desktop_1detail_original@2x-min.png);
+        }
+    }
+
+    .image__scanned-detail:before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 177px;
+        height: 154px;
+        background-image: url(../images/scanning3d/desktop_2detail_scanned-min.png);
+        background-size: 177px 154px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .image__scanned-detail::before {
+            content: '';
+            background-image: url(../images/scanning3d/desktop_2detail_scanned@2x-min.png);
+        }
+    }
+    
+    .image__transformed-detail::before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 177px;
+        height: 154px;
+        background-image: url(../images/scanning3d/desktop_3detail_transformed@2x-min.png);
+        background-size: 177px 154px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .image__transformed-detail::before {
+            content: '';
+            background-image: url(../images/scanning3d/desktop_3detail_transformed@2x-min.png);
+        }
+    }
+    
+    .image__printed-detail::before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 177px;
+        height: 154px;
+        background-image: url(../images/scanning3d/desktop_4detail_3d_printed_model-min.png);
+        background-size: 177px 154px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .image__printed-detail::before {
+            content: '';
+            background-image: url(../images/scanning3d/desktop_4detail_3d_printed_model@2x-min.png);
+        }
+    }
 }
