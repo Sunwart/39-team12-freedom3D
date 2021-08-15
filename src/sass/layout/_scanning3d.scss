@@ -1,4 +1,8 @@
 //   General & Mobile from 320px to 767px
+.scanning {
+    position: relative;
+}
+
 .scanning-hero::after {
     content: '';
     display: inline-block;
@@ -148,7 +152,7 @@
         content: '';
         position: absolute;
         right: 0;
-        top: 281px;
+        top: 177px;
         z-index: -999;
 
         display: inline-block;
