@@ -1,0 +1,137 @@
+.scanning-hero {
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 280px;
+        height: 200px;
+        background-image: url(../images/scannin3d/mobile_hero@-min.png);
+        background-size: 280px 200px;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .scanning-hero::after {
+        content: '';
+        background-image: url(../images/scannin3d/mobile_hero@2x-min.png);
+    }
+}
+
+.scanning__item {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+
+    color: var(--primary-title-color);
+
+    background: var(--primary-background-color);
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px var(--primary-background-color);
+    border-radius: 50px 0px;
+}
+
+.image__original-detail {
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 92px;
+        height: 82px;
+        background-image: url(../images/scannin3d/mobile_1detail_original-min.png);
+        background-size: 92px 82px;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .image__original-detail::before {
+        content: '';
+        background-image: url(../images/scannin3d/mobile_1detail_original@2x-min.png);
+    }
+}
+
+.image__scanned-detail {
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 92px;
+        height: 82px;
+        background-image: url(../images/scannin3d/mobile_2detail_scanned-min.png);
+        background-size: 92px 82px;
+    }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .image__scanned-detail::before {
+        content: '';
+        background-image: url(../images/scannin3d/mobile_2detail_scanned@2x-min.png);
+    }
+}
+
+.image__transformed-detail {
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 92px;
+        height: 82px;
+        background-image: url(../images/scannin3d/mobile_3detail_transformed@2x-min.png);
+        background-size: 92px 82px;
+    }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .image__transformed-detail::before {
+        content: '';
+        background-image: url(../images/scannin3d/mobile_3detail_transformed@2x-min.png);
+    }
+}
+
+.image__printed-detail {
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 92px;
+        height: 82px;
+        background-image: url(../images/scannin3d/mobile_4detail_3d_printed_model-min.png);
+        background-size: 92px 82px;
+    }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .image__printed-detail::before {
+        content: '';
+        background-image: url(../images/scannin3d/mobile_4detail_3d_printed_model@2x-min.png);
+    }
+}
+
+.scanning__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.margin-bottom__min {
+    margin-bottom: 16px;
+}
+
+.margin-bottom__middle {
+    margin-bottom: 24px;
+}
+
+.margin-bottom__max {
+    margin-bottom: 52px;
+}
+
+.scanning__wrapper--margin-bottom {
+    margin-bottom: 55px;
+}
+
+.scanning__link--margin-bottom {
+    margin-bottom: 76px;
+}
