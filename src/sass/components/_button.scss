@@ -7,7 +7,8 @@
 .btn__make-order {
   display: block;
   margin: 0 auto;
-  padding: 16px 32px;
+  padding: 16px 0px;
+  //padding: 16px 32px;
   border: none;
   width: 280px;
 
@@ -31,9 +32,13 @@
   &:focus {
     box-shadow: none;
   }
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  // border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  // box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 // Button Send Contacts Form  - Vidpravyty
@@ -43,7 +48,8 @@
 .btn__send-form {
   display: block;
   margin: 0 auto;
-  padding: 16px 83.5px;
+  // padding: 16px 83.5px;
+  padding: 16px 0px;
   border: none;
   width: 280px;
 
@@ -67,9 +73,12 @@
   &:focus {
     box-shadow: none;
   }
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  //   border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  //   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 //   Tablet from 768px to 1439px
@@ -77,7 +86,7 @@
 
 @media screen and (min-width: 768px) {
   .btn__send-form {
-    padding: 16px 32px;
+    // padding: 16px 32px;
     width: 177px;
   }
 }
