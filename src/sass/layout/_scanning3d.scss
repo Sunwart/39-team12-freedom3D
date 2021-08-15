@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.scanning-hero::after {
+.scanning__hero::after {
     content: '';
     display: inline-block;
     width: 280px;
@@ -145,10 +145,10 @@
 }
 
 @media screen and (min-width: 768px) {
-    .scanning-hero {
+    .scanning__hero {
         margin-bottom: 52px;
     }
-    .scanning-hero::after {
+    .scanning__hero::after {
         content: '';
         position: absolute;
         right: 0;
@@ -247,5 +247,158 @@
     .scanning__wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 12px;
+    }
+}
+
+//   Desktop from 1440px to max
+
+@media screen and (min-width: 1440px) {
+    .scanning__hero {
+        position: relative;
+        margin-bottom: 24px;
+    }
+
+    .main__title-section {
+        margin-bottom: 24px;        
+    }
+
+    .hero__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1062px;
+        margin-bottom: 100px;
+    }
+
+    .hero__item {
+        flex-basis: 515px;
+        
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+
+        margin-bottom: 0px;
+
+        &:first-child {
+            margin-bottom: 24px;
+        }
+    }
+
+    .scanning__hero::after {
+        content: '';
+        position: absolute;
+        top: 116px;
+        right: 0;
+        z-index: -999;
+
+        display: inline-block;
+        width: 515px;
+        height: 368px;
+        background-image: url(../images/scanning3d/desktop_hero-min.png);
+        background-size: 515px 368px;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {         
+            background-image: url(../images/scanning3d/desktop_hero@2x-min.png);        
+        }
+    } 
+
+    .scanning__process {
+        margin-bottom: 52px;
+    }
+
+    .scanning__wrapper {
+        margin-bottom: 100px;
+    }
+
+    .scanning__item {
+        padding-top: 55px;
+        padding-right: 37px;
+        padding-bottom: 22px;
+        padding-left: 37px;
+
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.28;
+    }
+
+    .scanning__link--margin-bottom {
+        margin-bottom: 100px;
+    }
+
+    .image__original-detail::before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 177px;
+        height: 154px;
+        background-image: url(../images/scanning3d/desktop_1detail_original-min.png);
+        background-size: 177px 154px;
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .image__original-detail::before {
+            content: '';
+            background-image: url(../images/scanning3d/desktop_1detail_original@2x-min.png);
+        }
+    }
+
+    .image__scanned-detail:before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 177px;
+        height: 154px;
+        background-image: url(../images/scanning3d/desktop_2detail_scanned-min.png);
+        background-size: 177px 154px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .image__scanned-detail::before {
+            content: '';
+            background-image: url(../images/scanning3d/desktop_2detail_scanned@2x-min.png);
+        }
+    }
+    
+    .image__transformed-detail::before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 177px;
+        height: 154px;
+        background-image: url(../images/scanning3d/desktop_3detail_transformed@2x-min.png);
+        background-size: 177px 154px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .image__transformed-detail::before {
+            content: '';
+            background-image: url(../images/scanning3d/desktop_3detail_transformed@2x-min.png);
+        }
+    }
+    
+    .image__printed-detail::before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 177px;
+        height: 154px;
+        background-image: url(../images/scanning3d/desktop_4detail_3d_printed_model-min.png);
+        background-size: 177px 154px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .image__printed-detail::before {
+            content: '';
+            background-image: url(../images/scanning3d/desktop_4detail_3d_printed_model@2x-min.png);
+        }
     }
 }
