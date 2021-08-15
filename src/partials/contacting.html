@@ -1,4 +1,93 @@
 <!-- заголовок можна видаляти, теги main залишаємо -->
+<!--Contact page-->
+
 <main>
-    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing.</h1>   
+  <div class="container contact-page">
+    <!--Contact page hero section-->
+
+    <section class="contact-page__hero">
+      <h1>контакти</h1>
+      <div class="contact-page__hero-wrapper">
+        <div class="video-wrapper contact-page__hero-item">
+          <iframe
+            class="embedded-video"
+            src="https://www.youtube.com/embed/n_muoXfXlEg"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="contact-page__hero-item hero-description">
+          <p class="hero-description__item">
+            Людина, уперше побачивши процес 3D друку, може легко захопитися спостереженням за цим
+            процесом не на десяток хвилин.
+          </p>
+          <p class="hero-description__item">
+            Наша команда створює timelapse відео, щоб ви могли краще ознайомитися з технологією 3D
+            друку і просто помилуватися красою цього процесу.
+          </p>
+          <p class="hero-description__item">Приємного перегляду!</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact page contact information-->
+
+    <section class="contact-page__contacts">
+      <h2>Телефони</h2>
+      <ul class="contact-page__contacts-list list">
+        <li class="contact-page__contacts-item">
+          <a href="tel:+380957384551" class="link">+38 (095) -73-84-551</a>
+        </li>
+        <li class="contact-page__contacts-item">
+          <a href="tel:+380980025235" class="link">+38 (098) -00-25-235</a>
+        </li>
+      </ul>
+
+      <h2>Email</h2>
+      <div class="contact-page__contacts-list">
+        <a href="mailto:3dfreeform.info@gmail.com" class="link">3dfreeform.info@gmail.com</a>
+      </div>
+
+      <h2>Робочий час</h2>
+      <ul class="contact-page__contacts-list list">
+        <li>Пн-Пт: З 8:00 До 19:00</li>
+        <li>Сб, Нд: З 10:00 До 17:00</li>
+      </ul>
+    </section>
+
+    <!--Contact page contact form-->
+
+    <section class="contact-page__contact-form">
+      <div>
+        <h2>зв'яжіться з нами</h2>
+        <form action="#">
+          <label
+            >Ім'я
+            <input
+              type="text"
+              placeholder="Олексій"
+              name="username"
+              minlength="2"
+              title="Мінімум 2 символи"
+              required
+            />
+          </label>
+          <label
+            >Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label for="user_comments">Повідомлення</label>
+          <textarea name="comments" id="user_comments" placeholder="Залишіть своє повідмлення">
+              <input type="file" name="file"></input>
+          </textarea>
+          
+
+          <p>*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</p>
+          <button type="submit">відправити</button>
+        </form>
+      </div>
+    </section>
+  </div>
 </main>
