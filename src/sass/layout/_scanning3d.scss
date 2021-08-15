@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.scanning-hero::after {
+.scanning__hero::after {
     content: '';
     display: inline-block;
     width: 280px;
@@ -145,10 +145,10 @@
 }
 
 @media screen and (min-width: 768px) {
-    .scanning-hero {
+    .scanning__hero {
         margin-bottom: 52px;
     }
-    .scanning-hero::after {
+    .scanning__hero::after {
         content: '';
         position: absolute;
         right: 0;
@@ -248,4 +248,61 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 12px;
     }
+}
+
+//   Desktop from 1440px to max
+
+@media screen and (min-width: 1440px) {
+    .scanning__hero {
+        margin-bottom: 24px;
+    }
+
+    .main__title-section {
+        margin-bottom: 24px;        
+    }
+
+    .scanning__hero {
+        position: relative;
+    }
+
+    .hero__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1062px;
+        margin-bottom: 100px;
+    }
+
+    .hero__item {
+        flex-basis: 515px;
+        
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+
+        margin-bottom: 0px;
+
+        &:first-child {
+            margin-bottom: 24px;
+        }
+    }
+
+    .scanning__hero::after {
+        content: '';
+        position: absolute;
+        top: 116px;
+        right: 0;
+        z-index: -999;
+
+        display: inline-block;
+        width: 515px;
+        height: 368px;
+        background-image: url(../images/scanning3d/desktop_hero-min.png);
+        background-size: 515px 368px;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {         
+            background-image: url(../images/scanning3d/desktop_hero@2x-min.png);        
+        }
+    } 
 }
