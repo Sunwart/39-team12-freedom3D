@@ -135,7 +135,7 @@
 //   Tablet from 768px to 1439px
 
 @media screen and (min-width: 768px) {
-    .p-t {
+    .hero__item {
         width: 515px;
     }
 }
@@ -258,7 +258,7 @@
         margin-bottom: 24px;
     }
 
-    .main__title-section {
+    .hero__title {
         margin-bottom: 24px;        
     }
 
@@ -270,7 +270,6 @@
     }
 
     .hero__item {
-        flex-basis: 515px;
         
         &:not(:last-child) {
             margin-right: 32px;
