@@ -39,13 +39,13 @@
           <h2 class="second__title-section contact-page__header-secondary">зв'яжіться з нами</h2>
           <form action="#">
             <div class="contact-page__form-field">
-              <input id="username" class="contact-page__form-input" type="text" name="username" minlength="2" title="Мінімум 2 символи"
+              <input id="username" class="contact-page__form-input" type="text" name="username" minlength="2" title="Мінімум 2 символи" placeholder=" "
                 required />
               <label for="username" class="contact-page__form-label">Ім'я</label>
             </div>
       
             <div class="contact-page__form-field">
-              <input id="user-email" type="email" name="email" class="contact-page__form-input" required />
+              <input id="user-email" type="email" name="email" class="contact-page__form-input" placeholder=" " required />
               <label for="user-email" class="contact-page__form-label">Email</label>
             </div>
 
@@ -53,8 +53,7 @@
       
             <div class="contact-page__comment-wrapper">
               
-              <textarea name="comments" placeholder="Залишіть своє повідмлення" class="contact-page__comment-area">
-                </textarea>
+              <textarea name="comments" placeholder="Залишіть своє повідомлення" class="contact-page__comment-area"></textarea>
               
       
               <label for="attach-file" class="contact-page__attach-file">
@@ -62,7 +61,7 @@
                   <use href="./images/svg/icons.svg#clip"></use>
                 </svg>
               </label>
-              <input type="file" name="file" id="attach-file" hidden></input>
+              <input type="file" name="file" id="attach-file" hidden />
       
             </div>
       
@@ -97,13 +96,17 @@
         <div class="contact-page__contacts-list">
           <h2 class="second__title-section contact-page__header-secondary">Робочий час</h2>
           <ul class="list">
-            <li class="contact-page__worktime-item">Пн-Пт:</li>
-            <li class="contact-page__worktime-item">З 8:00 До 19:00</li>
-            <li class="contact-page__worktime-item">Сб, Нд:</li>
-            <li class="contact-page__worktime-item">З 10:00 До 17:00</li>
+            <li>
+              <p class="contact-page__worktime-item">Пн-Пт:</p>
+              <p class="contact-page__worktime-item">З 8:00 До 19:00</p>
+            </li>
+            <li>
+              <p class="contact-page__worktime-item">Сб, Нд:</p>
+              <p class="contact-page__worktime-item">З 10:00 До 17:00</p>
+            </li>
           </ul>
-          </section>
         </div>
+      </section>
         
       
         
@@ -115,3 +118,4 @@
    
   </div>
 </main>
+
