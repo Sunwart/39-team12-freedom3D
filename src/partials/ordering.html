@@ -1,14 +1,21 @@
 
 <main>
-  <section class="ordering">
+  <section class="section">
   <div class="container">
-    <h1 class="ordering__tittle">Зробити замовлення</h1>   
-    <div class="ordering__img"></div>
-    <p class="ordering__text">На цій сторінці ви можете зробити замовлення заповнивши форму і ми зв'яжемося з вами.</p>
+    <h1 class="main__title-section ordering__title">Зробити замовлення</h1> 
+    <div class="ordering__wrapper"> 
 
-    <p class="ordering__text">Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть відповідь на всі ваші запитання.</p>
+    <div class="ordering__wrapper-img">    
+    <div class="ordering__img"></div>    
+    </div>
+
+<div class="ordering__wrapper-text"> 
+  <p class="ordering__text">На цій сторінці ви можете зробити замовлення заповнивши форму і ми зв'яжемося з вами.</p>
+  <p class="ordering__text">Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть відповідь на всі ваші запитання.</p>
+</div>
     
-    <h2 class="form__tittle">Зв'яжіться з нами</h2>
+  </div> 
+    <h2 class="second__title-section form__tittle">Зв'яжіться з нами</h2>
     <form  class="form__ordering" method="POST" autocomplete="off" enctype="multipart/form-data">
         <div class="form__ordering-div">
       <input class="form__ordering-input" type="text" name="name"  id="name "minlength="2" placeholder=" " required pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Ім'я повинно містити символи кирилиці або латиниці">           

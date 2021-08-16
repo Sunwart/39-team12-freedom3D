@@ -1,12 +1,19 @@
-.ordering__tittle {
-font-family: var(--main-font);
-font-weight: bold;
-font-size: 24px;
-line-height: 1.25;
-text-align: center;
-margin-bottom: 16px;
 
-color: var(--primary-title-color);
+@media screen and (min-width: 768px) {
+    .ordering__wrapper{
+        display:flex;
+        
+    }
+    .ordering__wrapper-img{
+        margin-right: 20px;
+    }
+}
+
+
+
+.ordering__title{
+    margin-bottom: 24px;
+
 }
 .ordering__text{
     font-family: var(--main-font);
@@ -14,42 +21,67 @@ color: var(--primary-title-color);
     font-size: 16px;
     line-height: 1.25;
     color: var(--primary-text-color);
-
+  margin-bottom: 10px;
+  margin-top: 22px;
+  @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+      margin-top: 0;
+  }
 }
-
-.ordering__img + .ordering__text{
-    margin-bottom: 10px;
-}
-
 
 
 
 .ordering__img{
-    width: 320px;
-  height: 240px;
   background-image: url(../images/ordering/galery-image-mob.jpg);
-  background-size: 280px 171px;
+  background-size: contain;
   width: 280px;
   height: 171px;
+  border-radius: 15px;
   background-repeat: no-repeat;
-  margin-bottom: 22px;
+  
+
+  @media screen and (min-width: 768px)
+  {
+    .ordering__img{ 
+    background-image: url(../images/ordering/galery-image-tab.jpg);
+      margin-bottom: 0;
+      width: 247px;
+      height: 116px;
+      background-size: 247px 116px;
+      
+  }
+}
 }
 
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 2dppx)
+   {
   .ordering__img {
     background-image: url(../images/ordering/galery-image-mob@2x.jpg);
   }
+
+
+  @media screen and (min-width: 768px){
+    .ordering__img {
+        background-image: url(../images/ordering/galery-image-tab@2x.jpg);
+      }  
+    
+  }
+
+
 }
 
+
+
+
+
+
+
+
 .form__tittle{
-font-family: var(--main-font);
-font-weight: bold;
-font-size: 18px;
-line-height: 1.27;
-color: var(--primary-title-color);
+text-align: center;
 margin-top: 52px;
 margin-bottom: 28px;
 }
@@ -221,9 +253,11 @@ color: var(--primary-text-color);
 margin-bottom: 8px;
 
 }
+
 .order__phone{
     text-decoration:none;
 }
+
 .order__email{
     font-family:var(--main-font);
     font-style: normal;
@@ -239,6 +273,8 @@ margin-bottom: 8px;
     text-decoration:none;
     
 }
+
 .contact__time{
     margin-bottom: 8px;
 }
+  
