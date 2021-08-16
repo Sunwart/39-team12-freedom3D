@@ -1,0 +1,216 @@
+.modeling__title{
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #487996;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.modeling__text{
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2B2B2B;
+    padding-right: 0;
+}
+.modeling__text:not(:last-child){
+    margin-bottom: 16px;
+}
+.modeling__heading{
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.27;
+    text-transform: uppercase;
+    color: #487996;
+    margin-top: 52px;
+    margin-bottom: 16px;
+}
+.modeling__item{
+    position: relative;
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2B2B2B;
+    padding-left: 17px;
+    &:not(:last-child){
+        margin-bottom: 16px;
+    }
+    &::before{
+        position: absolute;
+        top: 6px;
+        left: 0;
+        content: "";
+        width: 7px;
+        height: 7px;
+        background: #487996;
+        border-radius: 3px 0px;
+        margin-right: 10px;
+    }
+}
+.modeling-block{
+    padding-bottom: 248px;
+    background-image: url(../images/heroimg/imgheroM1x.png);
+    background-repeat: no-repeat;
+    background-position: 0 294px;
+    background-size: 100% auto;
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 280px),
+    (min-resolution: 192dpi) and (min-width: 280px),
+    (min-resolution: 2dppx) and (min-width: 280px) {
+        .hero{
+            background-image: url(../images/heroimg/imgheroM2x.png);
+        }
+    }
+.modeling__caption{
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #487996;
+    margin-bottom: 16px;
+
+}
+.modeling__caption-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 52px;
+    margin-bottom: -16px;
+    margin-right: -10px;
+}
+
+.modeling__caption-img{
+    flex-basis: calc((100% - 20px) / 2);
+    margin-bottom: 16px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .modeling__title{
+        font-family: Cera Pro;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.25;
+        color: #487996;
+    }
+    .modeling__text{
+        max-width: 515px;
+    }
+    .modeling__heading{
+        font-family: Cera Pro;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: #487996;
+    }
+    .modeling-block{
+        padding-bottom: 52px;
+        background-image: url(../images/heroimg/imgheroT1x.png);
+        background-repeat: no-repeat;
+        background-position: 362px 34px;   
+    }  
+    //dpr2 и 768px+
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+        (min-resolution: 192dpi) and (min-width: 768px),
+        (min-resolution: 2dppx) and (min-width: 768px) {
+            .hero{
+                background-image: url(../images/heroimg/imgheroT2x.png.);
+           }
+        }
+    
+
+    .modeling__caption{
+        font-family: Cera Pro;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: #487996;
+        max-width: 500px;
+    }
+   
+    .modeling__caption-list{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+  
+}
+@media screen and (min-width:1440px){
+    .modeling__title{
+        font-family: Cera Pro;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.26;
+        color: #487996;
+        padding-top: 24px;
+        margin-bottom: 24px;
+    }
+    .modeling__text{
+        font-family: Cera Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.27;
+        color: #2B2B2B;
+        max-width: 510px;
+    }
+    .modeling__block-text{
+        display: flex;
+        justify-content: space-between;
+    }
+    .modeling__heading{
+        font-family: Cera Pro;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: #487996;
+        padding-top: 100px;
+    }
+    .modeling__item{
+        font-family: Cera Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.27;
+        color: #2B2B2B;
+    }
+    .modeling-block{
+        padding-bottom: 100px;
+        background-image: url(../images/heroimg/imgheroD1x.png);
+        background-repeat: no-repeat;
+        background-position: 550px 38px;
+    }
+    .modeling__caption{
+        font-family: Cera Pro;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: #487996;
+        margin-bottom: 52px;
+        max-width: 842px;
+    }
+    .modeling-icon{
+        width: 250px;
+        height: 219px;
+    }
+
+}
