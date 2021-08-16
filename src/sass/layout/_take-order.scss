@@ -200,8 +200,45 @@ line-height: 23px;
 /* identical to box height */
 
 margin-bottom: 8px;
+margin-top: 24px;
 color: var(--primary-title-color);
 }
 .order__phone-list{
     list-style: none;
+}
+
+.order__phone-item{
+font-family:var(--main-font);
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+text-transform: capitalize;
+
+color: var(--primary-text-color);
+margin-bottom: 8px;
+
+}
+.order__phone{
+    text-decoration:none;
+}
+.order__email{
+    font-family:var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    
+    text-transform: capitalize;
+    
+    color: var(--primary-text-color);
+    margin-bottom: 8px;
+    text-decoration:none;
+    
+}
+.contact__time{
+    margin-bottom: 8px;
 }
