@@ -4,11 +4,7 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  @media screen and (min-width: 1440px) {
-    // padding-left: 80px;
-    //padding-top: 40px;
-    // padding-right: 80px;
-  }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -16,22 +12,24 @@
     display: flex;
   }
 }
+
 .logo {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
 .main-nav__site {
-  @media screen and (max-width: 1440px) {
-    display: none;
-    @media screen and (min-width: 1440px) {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-left: 213px;
-      margin-right: 109px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 213px;
+    margin-right: 109px;
+    
+    @media screen and (max-width: 1439px) {
+      display: none;
     }
-  }
 }
+
 .main-nav__items:not(:first-child) {
   margin-left: 54px;
 }
