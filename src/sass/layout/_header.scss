@@ -33,7 +33,7 @@
   margin-left: 54px;
 }
 .main-nav__link {
-  font-family: 'Caviar dreams';
+  font-family: var(--second-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -302,7 +302,7 @@
   color: var(--primary-title-color);
 }
 .service__link {
-  font-family: 'Cera Pro';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
