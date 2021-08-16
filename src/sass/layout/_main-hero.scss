@@ -1,7 +1,25 @@
+
 .main-hero__title-wrapper {
-  padding-right: 30px;
-  padding-left: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 620px;
+  }
 }
+
+@media screen and (min-width: 1440px) {
+  .main-hero__title--br {
+    display: block;
+  }
+}
+
 .main-hero__title {
   font-family: var(--second-font);
   font-weight: 400;
@@ -11,11 +29,13 @@
   color: var(--primary-text-color);
   margin-bottom: 32px;
 }
+
 .main-hero__list {
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
 }
+
 .main-hero__text {
   font-family: var(--second-font);
   font-weight: 400;
@@ -24,39 +44,41 @@
   text-align: center;
   color: var(--primary-text-color);
 }
-.main-hero__img1 {
-  border-radius: 0px 35px 0px 0px;
-}
-.main-hero__item1 {
-  border-radius: 0px 35px 0px 0px;
-}
-.main-hero__img2 {
-  border-radius: 100px;
-}
-.main-hero__item2 {
-  border-radius: 100px;
-}
-.main-hero__img3 {
-  border-radius: 0px 25px;
-}
-.main-hero__item3 {
-  border-radius: 0px 25px;
-}
+
 .main-hero__item {
   box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.3));
   &:not(:last-child) {
     margin-right: 15px;
   }
 }
+
 .anchor-link {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    &__svg {
+      fill: #008cef;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.main-hero__img1, .main-hero__item1 {
+  border-radius: 0px 35px 0px 0px;
+}
+
+.main-hero__img2, .main-hero__item2 {
+  border-radius: 100px;
+}
+
+.main-hero__img3, .main-hero__item3 {
+  border-radius: 0px 25px;
 }
 
 @media screen and (min-width: 768px) {
-  .main-hero__title-wrapper {
-    padding-right: 170px;
-    padding-left: 170px;
-  }
   .main-hero__title {
     margin-bottom: 64px;
     font-size: 24px;
@@ -71,15 +93,9 @@
     font-size: 18px;
     line-height: 1.17;
   }
-  .anchor-link {
-    display: block;
-    &__svg {
-      fill: #008cef;
-      width: 16px;
-      height: 16px;
-    }
-  }
 }
+
+
 @media screen and (min-width: 1440px) {
   .anchor-link__svg {
     width: 32px;
@@ -99,16 +115,12 @@
   .main-hero__item:not(:last-child) {
     margin-right: 36px;
   }
-  .main-hero__img1 {
+  
+  .main-hero__img1, .main-hero__item1 {
     border-radius: 0px 72px 0px 0px;
   }
-  .main-hero__item1 {
-    border-radius: 0px 72px 0px 0px;
-  }
-  .main-hero__img3 {
-    border-radius: 0px 72px;
-  }
-  .main-hero__item3 {
+
+  .main-hero__img3, .main-hero__item3 {
     border-radius: 0px 72px;
   }
 }
