@@ -1,11 +1,26 @@
 <!-- список можна видаляти, теги header залишаємо-->
-<header class="container">
-    <ul>
-        <li><a href="./index.html">Головна</a></li>
-        <li><a href="./modeling.html">3D Моделювання</a></li>
-        <li><a href="./scanning.html">3D Сканування</a></li>
-        <li><a href="./print.html">3D Друк</a></li>
-        <li><a href="./order.html">Замовити</a></li>
-        <li><a href="./contacts.html">Контакти</a></li>
-    </ul>
+<header class="header-container">
+    <div>
+        <nav class="site-nav">
+          <a href="./index.html" class="link"><img src="./images/svg/logo.svg" alt="Логотип 3DFreedom" class="header-logo"></a>
+          <ul class="list header-menu">
+
+            <li class="header-menu__item"><a href="./index.html" class="link header-menu__item-link">Головна</a></li>
+        
+            <li class="header-menu__item">
+              <a href="#" class="link header-menu__item-link services-menu">Послуги</a>
+              <ul class="list submenu">
+                <li class="submenu__item"><a class="link submenu__item-link" href="./modeling.html">3D Моделювання</a></li>
+                <li class="submenu__item"><a class="link submenu__item-link" href="./scanning.html">3D Сканування</a></li>
+                <li class="submenu__item"><a class="link submenu__item-link" href="./print.html">3D Друк</a></li>
+              </ul>
+            </li>
+
+            <li class="header-menu__item"><a href="./order.html" class="link header-menu__item-link">Замовити</a></li>
+
+            <li class="header-menu__item"><a href="./contacts.html" class="link header-menu__item-link">Контакти</a></li>
+
+          </ul>
+        </nav>
+      </div>
 </header>
