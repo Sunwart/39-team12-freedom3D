@@ -1,4 +1,3 @@
-
 .main-hero__title-wrapper {
   text-align: center;
   margin-left: auto;
@@ -59,22 +58,25 @@
     display: block;
 
     &__svg {
-      fill: #008cef;
+      fill: var(--main-icon-color);
       width: 16px;
       height: 16px;
     }
   }
 }
 
-.main-hero__img1, .main-hero__item1 {
+.main-hero__img1,
+.main-hero__item1 {
   border-radius: 0px 35px 0px 0px;
 }
 
-.main-hero__img2, .main-hero__item2 {
+.main-hero__img2,
+.main-hero__item2 {
   border-radius: 100px;
 }
 
-.main-hero__img3, .main-hero__item3 {
+.main-hero__img3,
+.main-hero__item3 {
   border-radius: 0px 25px;
 }
 
@@ -95,7 +97,6 @@
   }
 }
 
-
 @media screen and (min-width: 1440px) {
   .anchor-link__svg {
     width: 32px;
@@ -115,12 +116,14 @@
   .main-hero__item:not(:last-child) {
     margin-right: 36px;
   }
-  
-  .main-hero__img1, .main-hero__item1 {
+
+  .main-hero__img1,
+  .main-hero__item1 {
     border-radius: 0px 72px 0px 0px;
   }
 
-  .main-hero__img3, .main-hero__item3 {
+  .main-hero__img3,
+  .main-hero__item3 {
     border-radius: 0px 72px;
   }
 }
