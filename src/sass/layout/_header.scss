@@ -12,7 +12,7 @@
   }
 }
 
-.logo {
+.header--logo {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -166,7 +166,7 @@
 }
 .phone-contact {
   @media screen and (min-width: 1440px) {
-    margin-left: 94px;
+    margin-left: auto;
   }
 }
 .phone-contact__item:not(:last-child) {
