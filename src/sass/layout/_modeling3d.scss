@@ -1,3 +1,6 @@
+.modeling-container{
+    padding-bottom: 76px;
+}
 .modeling__title{    
     margin-bottom: 16px;
 }
@@ -110,6 +113,9 @@
   
 }
 @media screen and (min-width:1440px){
+    .modeling-container{
+        padding-bottom: 100px;
+    }
     .modeling__title{        
         padding-top: 24px;
         margin-bottom: 24px;
@@ -123,6 +129,7 @@
     }
     .modeling__heading{     
         padding-top: 100px;
+        margin-top: 0;
     }
     .modeling__item{
         font-family: var(--main-font); 
@@ -160,5 +167,4 @@
         width: 250px;
         height: 219px;
     }
-
 }
