@@ -108,9 +108,10 @@
     <!--Мобильное меню-->
     <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
+            <div class="mobile-menu__header">
             <!-- логотип -->
             <a href="" class="logo link">
-                <img src="./images/svg/logo.svg" alt="Логотип3DFreedom">
+                <img src="./images/svg/logo.svg" alt="Логотип3DFreedom" width="101">
             </a>
             <!-- кнопка закрытия меню -->
             <button class="close-btn mobile-menu__close-btn" data-menu-close>
@@ -118,15 +119,38 @@
                     <use href="./images/svg/icons.svg#close"></use>
                 </svg>
             </button>
+            <button class="phone-btn">
+                <svg class="phone-btn__icon">
+                    <use href="./images/svg/icons.svg#phone"></use>
+                </svg>
+                <ul class="submenu-phone list">
+                
+                    <li class="submenu-phone__item">
+                
+                        <a href="tel:+380936432288" class="phone-contact__link link">
+                
+                            +38 (093) 643 22 88
+                        </a>
+                    </li>
+                    <li class="submenu-phone__item">
+                
+                        <a href="tel:+380503454423" class="phone-contact__link link">
+                
+                            +38 (050) 345 44 23
+                        </a>
+                    </li>
+                </ul>
+
+            </button>
             <!-- выбор языка сайта -->
             <ul class="lang-site list">
-                <li class="lang-site__item">
+                <li class="lang-site__item lang-site__item--hidden">
                     <a href="" class="lang-site__link link">UKR</a>
                 </li>
-                <li class="lang-site__item">
+                <li class="lang-site__item lang-site__item--active">
                     <a href="" class="lang-site__link link">ENG</a>
                 </li>
-                <li class="lang-site__item">
+                <li class="lang-site__item lang-site__item--hidden">
                     <a href="" class="lang-site__link link">RUS</a>
                 </li>
             </ul>
@@ -153,6 +177,7 @@
                     </a>
                 </li>
             </ul>
+            </div>
             <!-- навигация по сайту -->
             <ul class="nav-list list">
                 <li class="nav-list__item">
