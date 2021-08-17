@@ -1,7 +1,6 @@
-
 .header-nav {
   display: flex;
-
+  justify-content: space-between;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -13,7 +12,7 @@
   }
 }
 
-.header--logo {
+.logo {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -34,7 +33,7 @@
   margin-left: 54px;
 }
 .main-nav__link {
-  font-family: var(--second-font);
+  font-family: 'Caviar dreams';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -55,15 +54,16 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-nav__items:hover .main-nav__icon--up {
-  display: none;
-}
 .main-nav__icon--down {
   display: none;
 }
-.main-nav__items:active .main-nav__icon--down {
-  display: none;
+.main-nav__items:hover .main-nav__icon--up {
+  visibility: hidden;
 }
+.main-nav__items:hover .main-nav__icon--down {
+  display: inline;
+}
+
 .main-nav__icon--up,
 .main-nav__icon--down {
   margin-left: 4px;
@@ -97,7 +97,7 @@
 }
 
 .burger-btn {
-  margin-left: 23px;
+  //margin-left: 23px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -107,9 +107,9 @@
     width: 32px;
     height: 32px;
     fill: var(--main-icon-color);
-    @media screen and (min-width: 768px) {
-      margin-left: 174px;
-    }
+    //@media screen and (min-width: 768px) {
+    //  margin-left: 174px;
+    //}
   }
 }
 
@@ -120,8 +120,8 @@
 }
 
 .phone-btn {
-  margin-left: auto;
-  margin-right: 21px;
+  // margin-left: auto;
+  //margin-right: 21px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -167,7 +167,7 @@
 }
 .phone-contact {
   @media screen and (min-width: 1440px) {
-    margin-left: auto;
+    margin-left: 94px;
   }
 }
 .phone-contact__item:not(:last-child) {
@@ -194,16 +194,17 @@
     fill: var(--main-icon-color);
   }
 }
-@media screen and (min-width: 768px) {
-  .lang-site {
-    margin-left: auto;
-    margin-right: 6px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .lang-site {
-    margin-left: 109px;
-  }
+//@media screen and (min-width: 768px) {
+//.lang-site {
+//  margin-left: auto;
+//  margin-right: 6px;
+//}
+//}
+//@media screen and (min-width: 1440px) {
+.lang-site {
+  padding-top: 11px;
+  // margin-left: 109px;
+  //}
 }
 
 .lang-site__link {
@@ -217,10 +218,10 @@
   padding-top: 4px;
   padding-bottom: 4px;
 }
-.lang-site__item--hidden {
+.lang-site__link--other {
   visibility: hidden;
 }
-.lang-site__item--active:hover .lang-site__item--hidden {
+.lang-site:hover .lang-site__link--other {
   visibility: visible;
 }
 .phone-contact__link {
@@ -258,7 +259,7 @@
 .mobile-menu__container {
   position: relative;
 }
-.mobile-menu-header {
+.mobile-menu__header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -303,7 +304,7 @@
   color: var(--primary-title-color);
 }
 .service__link {
-  font-family: var(--main-font);
+  font-family: 'Cera Pro';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -320,7 +321,9 @@
   width: 7px;
   height: 7px;
   margin-right: 11px;
-  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 1px solid transparent;
   background-color: var(--primary-title-color);
-  outline: 1px solid green;
+  padding: 7px;
 }
