@@ -47,6 +47,12 @@ body {
     z-index: -100;
   }
 }
+.bg-img-others.modeling-tablet {
+  height: 1347px;
+}
+.bg-img-others.scanning-tablet {
+  height: 1269px;
+}
 // Desktop from 1440px to max
 @media screen and (min-width: 1440px) {
   .bg-img-others {
