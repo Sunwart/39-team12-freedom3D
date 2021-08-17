@@ -1,6 +1,6 @@
 <!-- список можна видаляти, теги header залишаємо-->
 <header class="header-container">
-    <div>
+  <div class="header--align">
         <nav class="site-nav">
           <a href="./index.html" class="link"><img src="./images/svg/logo.svg" alt="Логотип 3DFreedom" class="header-logo"></a>
           <ul class="list header-menu">
@@ -28,26 +28,31 @@
             <li><a href="#" class="link lang other-langs">Ukr</a></li>
             <li><a href="#" class="link lang other-langs">Rus</a></li>
           </ul>
-
-          <ul class="list phones-list">
-            <li class="phones-list--item">
-                <a href="tel:+380936432288" class="link phone-list__number">
-                    <svg class="phone-icon">
-                        <use href="./images/svg/icons.svg#phone"></use>
-                    </svg>
-                    +38 (093) 643 22 88</a>
-            </li>
-            <li>
-                <a href="tel:+380503454423" class="link phone-list__number">
-                  <svg class="phone-icon">
-                        <use href="./images/svg/icons.svg#phone"></use>
-                    </svg>
-                    +38 (050) 345 44 23</a>
-            </li>
-           </ul>
-
         </nav>
-      </div>
 
+        <ul class="list phones-list">
+          <li class="phones-list--item">
+              <a href="tel:+380936432288" class="link phone-list__number">
+                  <svg class="phone-icon">
+                      <use href="./images/svg/icons.svg#phone"></use>
+                  </svg>
+                  +38 (093) 643 22 88</a>
+          </li>
+          <li>
+              <a href="tel:+380503454423" class="link phone-list__number">
+                <svg class="phone-icon">
+                      <use href="./images/svg/icons.svg#phone"></use>
+                  </svg>
+                  +38 (050) 345 44 23</a>
+          </li>
+         </ul>
+    </div>
+
+
+    <button type="button" class="burger-btn" data-menu-open>
+      <svg class="burger-btn__icon">
+          <use href="./images/svg/icons.svg#burger"></use>
+      </svg>
+    </button>
       
 </header>

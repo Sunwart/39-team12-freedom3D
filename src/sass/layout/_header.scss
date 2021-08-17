@@ -1,3 +1,4 @@
+// СТИЛІ ДЕСКТОП-ВЕРСІЇ
 
 .header-container {
     outline: green 1px solid;
@@ -7,8 +8,13 @@
     margin-right: auto;
 }
 
+.header--align {
+    display: flex;
+}
+
 .site-nav {
     display: flex;
+    flex-basis: 1015px;
 }
 
 .header-menu {
@@ -39,6 +45,8 @@
     outline: orange 1px solid;
 
     position: relative;
+
+    transition: transform 250ms linear;
 
 
     &:hover .submenu {
@@ -131,6 +139,8 @@
     color: #BDBDBD;
     padding: 3px;
     text-transform: uppercase;
+    
+    transition: color 250ms linear;
 
     &:hover {
         color: var(--main-icon-color);
@@ -154,8 +164,59 @@ margin-left: auto;
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
+
+    
+    transition: color 250ms linear;
+    &:hover {
+        color: var(--main-icon-color);
+    }
 }
 
 .phones-list--item{
     margin-bottom: 10px;
+}
+
+
+//СТИЛІ ПЛАНШЕТУ
+
+@media screen and(max-width: 1439px) {
+
+    .header-menu {
+        display: none;
+    }
+
+    .header-container {
+        width: 639px;
+        padding-top: 20px;
+        position: relative;
+    }
+    
+    .header-logo {
+        margin-right: 0;
+    }
+
+    .site-nav {
+        flex-basis: 444px;
+    }
+
+    .languages {
+        margin-left: auto;
+    }
+}
+
+.burger-btn__icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--main-icon-color);
+}
+
+.burger-btn {
+  position: absolute;
+  top: 29px;
+  left: 50%;
+  line-height: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  
 }
