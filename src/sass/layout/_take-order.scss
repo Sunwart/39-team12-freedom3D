@@ -1,4 +1,5 @@
 
+
 @media screen and (min-width: 768px) {
     .ordering__wrapper{
         display:flex;
@@ -20,7 +21,13 @@
 
 }
 
-
+@media screen and (min-width: 768px) and (max-width: 1439px){
+    .right-side{ display: flex;
+        justify-content: space-between;
+        padding-top: 76px;
+        padding-bottom: 76px;
+  }
+ }
 
 .ordering__title{
     margin-bottom: 24px;
@@ -114,10 +121,11 @@ text-align: center;
 margin-bottom: 28px;
 }
 
-.form__ordering{
-    display: flex;
-    flex-direction: column;
-}
+
+// .form__ordering{
+//     display: flex;
+//     flex-direction: column;
+// }
 
 .form__ordering-input{
     width: 100%;
@@ -257,27 +265,18 @@ margin-bottom: 44px;
 
 
 }
-.contact__tittle-phone{
-font-family: var(--main-font);
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 23px;
-/* identical to box height */
-margin-bottom: 8px;
-color: var(--primary-title-color);
-}
+
+
+
 .contact__tittle{
-font-family:var(--main-font);
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 23px;
-/* identical to box height */
 
 margin-bottom: 8px;
 
-color: var(--primary-title-color);
+
+@media screen and (min-width: 1440px){
+       margin-bottom: 18px;
+       
+       }
 }
 .order__phone-list{
     list-style: none;
@@ -325,15 +324,41 @@ color: var(--primary-text-color);
     color: var(--primary-text-color);
     margin-bottom: 8px;
     text-decoration:none;
+
+    @media screen and (min-width: 1440px){
+ font-size: 18px;
+    line-height: 1.11;
+    }
     
 }
 
 .contact__time{
     margin-bottom: 8px;
+    font-family:var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    
+    text-transform: capitalize;
+    
+    color: var(--primary-text-color);
+    
+
+    @media screen and (min-width: 1440px){
+        font-size: 18px;
+           line-height: 1.11;
+           
+           }
 }
   
 
-
+@media screen and (min-width: 1440px){
+    .contact__tittle + .contact__time{
+        margin-bottom: 18px;
+    }
+}
 
 @media screen and (min-width: 768px){
 
@@ -348,6 +373,22 @@ color: var(--primary-text-color);
     }
 
 }
+@media screen and (max-width: 767px){
+
+
+    .contact-wrapper{
+        margin-bottom: 24px;
+
+    }
+   .right-side{
+       margin-top: 52px;
+       padding-bottom: 76px;
+   }
+ 
+}
+
+
+
 
 
 @media screen and (min-width: 1440px){
@@ -372,7 +413,7 @@ color: var(--primary-text-color);
 
 
 .wrapper-hero-galery__img-two{
-    background-image: url(../images/ordering/galery-image4.png);
+    background-image: url(../images/ordering/galery-image2.png);
     background-size: contain;
     width: 144px;
     height: 144px;
@@ -382,7 +423,7 @@ color: var(--primary-text-color);
     margin-right: 42px;
   }
   .wrapper-hero-galery__img-three{
-    background-image: url(../images/ordering/galery-image2.png);
+    background-image: url(../images/ordering/galery-image4.png);
     background-size: contain;
     width: 144px;
     height: 144px;
@@ -390,4 +431,37 @@ color: var(--primary-text-color);
     background-repeat: no-repeat;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
   }
+
+
+  .contact-section{
+    display: flex;
+  
+    
+}
+.right-side{
+ display: block;
+  margin-left: auto;
+
+}
+  
+.contact-wrapper{
+ 
+margin-bottom: 30px;
+}
+
+.wpapper_desk-img{
+position: relative;
+}
+
+.desk-img{
+    background-image: url(../images/ordering/pic@2x.png);
+    background-size: contain;
+    width: 530px;
+    height: 325px;
+    position: absolute;
+    top: -280px;
+    left: 550px;
+
+    background-repeat: no-repeat; 
+}
 }
