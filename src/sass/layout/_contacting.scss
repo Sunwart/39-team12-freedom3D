@@ -1,11 +1,5 @@
 /*GENERAL PAGE STYLES*/
 
-// .contact-page {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-// }
-
 .contact-page__header-primary {
   margin-bottom: 18px;
   @media screen and (min-width: 768px) {
@@ -47,15 +41,14 @@
   flex-direction: column;
   justify-content: center;
 
-  //   margin-bottom: 53px;
-
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
   }
-
+}
+.hero-description {
   @media screen and (min-width: 1440px) {
-    // margin-bottom: 100px;
+    position: relative;
   }
 }
 .hero-description__item {
@@ -75,12 +68,19 @@
 }
 .hero-description__item:last-child::after {
   content: '\1F609';
-  width: 24px;
-  height: 24px;
+  font-size: 22px;
+  vertical-align: middle;
   margin-left: 2px;
 
   @media screen and (min-width: 768px) {
     margin-left: 5px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 49px;
   }
 }
 
@@ -94,6 +94,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 552px;
+    margin: 0;
+    display: inline-flex;
   }
 }
 
@@ -197,22 +202,21 @@
     margin-bottom: 44px;
   }
   @media screen and (min-width: 1440px) {
+    font-size: 17px;
     margin-bottom: 24px;
   }
 }
 
 /*CONTACT INFO LIST STYLES*/
 
-// .contact-page--contact-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   align-content: center;
+.contact-page--contact-wrapper {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
 
-//   @media screen and (min-width: 1440px) {
-//     flex-direction: row-reverse;
-//     flex-wrap: nowrap;
-//   }
-// }
 .email-header {
   text-transform: capitalize;
 }
@@ -222,6 +226,11 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  @media screen and (min-width: 1440px) {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 .contact-page__contacts-item-link {
@@ -229,10 +238,19 @@
   font-size: inherit;
   line-height: 1.25;
 }
+.contact-page__contacts-item:first-child {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 16px;
+  }
+}
 
 .contact-page__contacts-list:last-child {
   @media screen and (min-width: 768px) {
     text-align: right;
+  }
+  @media screen and (min-width: 1440px) {
+    text-align: left;
   }
 }
 
@@ -249,7 +267,14 @@
 
 .contact-page__worktime-item {
   font-size: inherit;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-.contact-page__worktime-item:nth-child(2) {
+.contact-page__worktime-item:first-child {
   margin-bottom: 8px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 18px;
+  }
 }
