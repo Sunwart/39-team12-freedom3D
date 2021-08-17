@@ -17,13 +17,11 @@
     display: flex;
     flex-basis: 470px;
     justify-content: space-between;
+    margin-right: 106px;
 }
 
 .submenu {
     display: none;
-    background-color: var(--primary-background-color);
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
 
     position: absolute;
     left: 0;
@@ -31,13 +29,26 @@
     width: 100%;
 }
 
+
+.drop-down-arrow {
+    fill: var(--main-icon-color);
+    position: absolute;
+    top: 19%;
+    left: 77%;
+}
+
 .header-menu__item {
     outline: orange 1px solid;
 
     position: relative;
 
+
     &:hover .submenu {
         display: block;
+    }
+
+    &:hover .drop-down-arrow {
+        transform: rotate(180deg);
     }
 }
 
@@ -50,7 +61,6 @@
 .header-menu__item-link {
     display: block;
     padding: 14px 0px 8px 0px;
-    outline: pink 1px solid;
 
     font-family: var(--second-font);
     font-weight: 400;
@@ -59,6 +69,13 @@
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
     text-align: center;
+
+    transition: color 250ms linear;
+
+    
+    &:hover {
+        color: var(--main-icon-color);
+      }
 }
 
 .submenu__item-link {
@@ -71,8 +88,53 @@
     color: var(--primary-text-color);
     text-align: center;
     padding-bottom: 6px;
+
+    transition: color 250ms linear;
+
+    
+    &:hover {
+        color: var(--main-icon-color);
+      }
 }
 
 .services-menu {
     width: 144px;
+}
+
+.services-bg { 
+    width: 304px;
+    height: 251px;
+    position: absolute;
+    top: -23%;
+    left: -42%;
+    background-image: url('../images/header/menu-bg.png');  
+    z-index: -1;
+}
+
+.languages {
+    padding-top: 11px;
+}
+
+.other-langs {
+  visibility: hidden;
+}
+
+.languages:hover .other-langs {
+    visibility: visible;
+}
+
+.lang {
+    display: block;
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.01em;
+    color: #BDBDBD;
+    padding: 3px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: var(--main-icon-color);
+    }
 }
