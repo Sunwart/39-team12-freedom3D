@@ -1,6 +1,35 @@
 // Text Styling
 
-//   Mobile from 0 to 320px to 767px
+//Mobile less then 320px
+
+.main__title-section {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25;
+
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.second__title-section {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.paragraph-text {
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.25;
+
+  color: var(--primary-text-color);
+}
+
+//   Mobile from 320px to 767px
 
 @media screen and (min-width: 320px) {
   .main__title-section {
