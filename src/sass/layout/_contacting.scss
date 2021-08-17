@@ -1,4 +1,10 @@
 /*GENERAL PAGE STYLES*/
+.contact-page {
+  padding-bottom: 24px;
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 0;
+  }
+}
 
 .contact-page__header-primary {
   margin-bottom: 18px;
@@ -68,6 +74,9 @@
 }
 .hero-description__item:last-child::after {
   content: '\1F609';
+  max-width: 22px;
+  max-height: 22px;
+
   font-size: 22px;
   vertical-align: middle;
   margin-left: 2px;
@@ -80,7 +89,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    font-size: 49px;
+    max-width: 49px;
+    max-height: 49px;
+    font-size: 40px;
   }
 }
 
