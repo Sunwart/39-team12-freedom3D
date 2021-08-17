@@ -28,12 +28,29 @@
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.logo-size {
+  width: 101px;
+  height: 25px;
+}
+@media screen and (min-width: 768px) {
+  .logo-size {
+    width: 125px;
+    height: 31px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .logo-size {
+    width: 192px;
+    height: 48px;
+  }
+}
 
 .main-nav__site {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-left: 213px;
+  flex-basis: 470px;
 
   @media screen and (max-width: 1439px) {
     display: none;
@@ -55,6 +72,7 @@
 .main-nav__link--submenu {
   margin-bottom: 8px;
 }
+
 .main-nav__items {
   position: relative;
   padding-top: 32px;
@@ -84,6 +102,7 @@
   height: 4px;
   fill: var(--main-icon-color);
 }
+
 @media screen and (min-width: 1440px) {
   .burger-btn {
     display: none;
@@ -120,7 +139,7 @@
   &__icon {
     width: 32px;
     height: 32px;
-    fill: var(--main-icon-color);
+    fill: var(--bgd-form-color);
     @media screen and (min-width: 768px) {
       margin-left: 174px;
     }
@@ -164,18 +183,18 @@
   text-align: center;
   right: 0;
   top: 100%;
-  padding: 8px 10px;
+  padding: 8px 5px;
   width: 50vw;
   background-color: var(--primary-background-color);
-
-  &::before {
-    width: 38px;
-    height: 26px;
-    border-radius: 2px;
-    border: 20px solid transparent;
-    border-bottom: 20px solid green;
-  }
 }
+//.submenu-phone::before {
+// width: 38px;
+//  height: 26px;
+// border-radius: 2px;
+//  border: 20px solid transparent;
+// border-bottom: 20px solid white;
+//}
+
 @media screen and (min-width: 768px) {
   .submenu-phone {
     display: none;
