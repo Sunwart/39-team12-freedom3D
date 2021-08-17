@@ -14,6 +14,10 @@
 
 // **************************
 
+.main__title-section--margin {
+  margin-bottom: 16px;
+}
+
 @media screen and (max-width: 767px) {
   .more-photos__item--hidden {
     display: none;
@@ -32,6 +36,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .main__title-section--margin {
+    margin-bottom: 32px;
+  }
+
   .more-photos__list {
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +55,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .main__title-section--margin {
+    margin-bottom: 52px;
+  }
+
   .more-photos__section {
     padding-top: 50px;
     padding-bottom: 50px;
