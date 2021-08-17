@@ -33,30 +33,24 @@
 
 @media screen and (min-width: 320px) {
   .main__title-section {
-    font-family: var(--main-font);
-    font-weight: 700;
     font-size: 24px;
     line-height: 1.25;
 
-    text-transform: uppercase;
-    color: var(--primary-title-color);
+    // text-transform: uppercase;
+    // color: var(--primary-title-color);
   }
   .second__title-section {
-    font-family: var(--main-font);
-    font-weight: 700;
     font-size: 18px;
     line-height: 1.28;
 
-    text-transform: uppercase;
-    color: var(--primary-title-color);
+    // text-transform: uppercase;
+    // color: var(--primary-title-color);
   }
   .paragraph-text {
-    font-family: var(--main-font);
-    font-weight: 300;
     font-size: 16px;
     line-height: 1.25;
 
-    color: var(--primary-text-color);
+    // color: var(--primary-text-color);
   }
 }
 //   Tablet from 768px to 1439px
