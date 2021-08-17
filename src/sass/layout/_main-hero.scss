@@ -95,12 +95,23 @@
     font-size: 18px;
     line-height: 1.17;
   }
+  .img-anchor__wrapper {
+    position: relative;
+  }
+
+  .anchor-link__svg {
+    position: absolute;
+    left: 73px;
+    top: 78px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .anchor-link__svg {
     width: 32px;
     height: 32px;
+    left: 42px;
+    top: 240px;
   }
 
   .main-hero__title {
