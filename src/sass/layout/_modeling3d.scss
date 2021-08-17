@@ -1,6 +1,7 @@
 .modeling-container{
     padding-bottom: 76px;
 }
+
 .modeling__title{    
     margin-bottom: 16px;
 }
@@ -75,6 +76,10 @@
     flex-basis: calc((100% - 20px) / 2);
     margin-bottom: 16px;
     margin-right: 10px;
+}
+.modeling-icon{
+    width: 152.83px;
+    max-height: 133.88px;
 }
 
 @media screen and (min-width: 768px) {
