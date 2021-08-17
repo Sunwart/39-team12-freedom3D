@@ -13,7 +13,9 @@
 @import './components/section';
 @import './components/text-styling';
 @import './components/button';
+
 @import './components/bg-image';
+@import './components/bg-image-others';
 
 @import './layout/header';
 
@@ -22,9 +24,12 @@
 @import './layout/main-hero';
 @import './layout/main-gallery';
 @import './layout/main-more-photos';
+
 @import './layout/modeling3d';
 @import './layout/scanning3d';
 @import './layout/print3d';
 @import './layout/contacting';
 
 @import './layout/footer';
+
+@import './layout/main-more-photos-modal';

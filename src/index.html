@@ -15,16 +15,22 @@
     <main>
       <include src="./partials/main-hero.html"></include>
       <include src="./partials/main-gallery.html"></include>
-      <include src="./partials/main-more-photos.html"></include>
+
+      <!-- две разметки на выбор, активна с галереей для десктопа -->
+      <!-- <include src="./partials/main-more-photos.html"></include> -->
+      <include src="./partials/main-more-photos-gallery.html"></include>
+      <!-- *************** -->
+
+      <include src="./partials/main-more-photos-modal.html"></include>
     </main>
 
     <include src="./partials/footer.html"></include>
 
-    <script src="./js/mobile-menu.js"></script>
-
-    <include src="./partials/anchor.html"></include>
-
     <include src="./partials/background.html"></include>
-
+  
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/anchor.js"></script>
+    <script src="./js/fslightbox.js"></script>
+    <script src="./js/more-photos-modal.js"></script>
   </body>
 </html>

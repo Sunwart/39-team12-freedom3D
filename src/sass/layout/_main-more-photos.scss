@@ -13,6 +13,22 @@
   margin-bottom: 16px;
 }
 
+// ****************************
+
+@media screen and (max-width: 1439px) {
+  .full-gallery--hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery--hidden {
+    display: none;
+  }
+}
+
+// **************************
+
 @media screen and (max-width: 767px) {
   .more-photos__item--hidden {
     display: none;
@@ -63,7 +79,7 @@
   // }
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
   .more-photos__section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -83,6 +99,7 @@
     margin-left: 32px;
     margin-top: 32px;
   }
+
   //  Способ 2 **********************************************
   // .more-photos__item {
   //   margin-right: 32px;
@@ -93,4 +110,12 @@
   //     margin-top: 32px;
   //   }
   // }
+
+  // ********************
+
+  // .gallery--hidden {
+  //   display: none;
+  // }
+
+  // ***********************
 }

@@ -123,6 +123,9 @@
     .modeling__text{        
         max-width: 510px;
     }
+    .modeling__text:not(:last-child) {
+        margin-bottom: 0;
+    }
     .modeling__block-text{
         display: flex;
         justify-content: space-between;
