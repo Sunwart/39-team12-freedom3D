@@ -2,19 +2,15 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 260px;
-
-  @media screen and (min-width: 768px) {
-    width: 340px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 620px;
-  }
 }
 
+.main-hero__title--br {
+    display: block;
+}
+
+
 @media screen and (min-width: 1440px) {
-  .main-hero__title--br {
+  .main-hero__title--br-desktop {
     display: block;
   }
 }
