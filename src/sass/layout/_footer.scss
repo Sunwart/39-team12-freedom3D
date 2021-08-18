@@ -26,10 +26,13 @@
 .footer-social__item:not(:last-child) {
   margin-bottom: 8px;
 }
+
 .footer-address__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.footer-address__item-title {
   margin-bottom: 8px;
 }
-
 .navigation,
 .footer-social,
 .footer-address__item-mail {
@@ -47,12 +50,17 @@
   color: var(--primary-text-color);
 }
 .footer-address_link {
+  display: block;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
 
   color: var(--primary-title-color);
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 // 768px +
@@ -94,5 +102,8 @@
   }
   .footer-social {
     margin-right: 145px;
+  }
+  .footer-address {
+    text-align: left;
   }
 }
