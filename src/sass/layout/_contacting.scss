@@ -79,25 +79,27 @@
 }
 
 .hero-description__item:last-child::after {
-  content: '\1F609';
-  max-width: 22px;
-  max-height: 22px;
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-image: url(../images/svg/emoji.svg);
+  background-size: 22px 22px;
+  vertical-align: text-bottom;
 
-  font-size: 22px;
-  vertical-align: middle;
-  margin-left: 2px;
+  margin-left: 8px;
 
   @media screen and (min-width: 768px) {
-    margin-left: 5px;
+    margin-left: 15px;
   }
   @media screen and (min-width: 1440px) {
     margin: 0;
     position: absolute;
     bottom: 0;
     left: 0;
-    max-width: 49px;
-    max-height: 49px;
-    font-size: 40px;
+    width: 49px;
+    height: 49px;
+    background-size: 49px 49px;
   }
 }
 
